@@ -8,10 +8,10 @@ const day = v => v instanceof Date ? Utilities.formatDate(v, Session.getScriptTi
 function doGet() {
   const today = day(new Date());
   const menu = rows("Menu").filter(r => r[1] && String(r[5]).toLowerCase() !== "no")
-    .map(r => ({ cat: r[0], name: r[1], unit: r[2], price: Number(r[3]), pnote: String(r[4]), note: String(r[6]) }));
+    .map(r => ({ cat: r[0], name: r[1], unit: r[2], price: Number(r[3]), pnote: String(r[4]), note: String(r[6]), photo: String(r[7] || "") }));
   const specials = rows("Specials")
     .filter(r => r[0] && String(r[6]).toLowerCase() === "yes" && (!r[4] || day(r[4]) <= today) && (!r[5] || day(r[5]) >= today))
-    .map(r => ({ cat: "Specials", name: r[0], note: String(r[1]), unit: r[2], price: Number(r[3]), pnote: "" }));
+    .map(r => ({ cat: "Specials", name: r[0], note: String(r[1]), unit: r[2], price: Number(r[3]), pnote: "", photo: String(r[7] || "") }));
   const days = {};
   rows("Calendar").forEach(r => { if (r[0]) days[day(r[0])] = { s: String(r[1]), l: String(r[2]) }; });
   rows("Bookings").filter(r => String(r[1]).toLowerCase() === "confirmed")

@@ -4,90 +4,98 @@
 <title>Yasmeen Ka Dastarkhan · Homemade Halal Desi Catering, Warrenville IL</title>
 <meta name="description" content="Homemade, halal, healthy Desi food. Catering, live cooking and weekly meal plans across the USA.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rozha+One&family=Hanken+Grotesk:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Patrick+Hand&display=swap" rel="stylesheet"><link rel="icon" href="logo.png">
 <style>
-:root{--wine:#2e0d13;--maroon:#5a1f26;--saffron:#f2a33a;--ribbon:#f0719b;--cloth:#fff6e8;--line:#ffffff30}
+:root{--ink:#1b1713;--terra:#f55e10;--teal:#1f504e;--peach:#f3b785;--paper:#fbf3e4;--soft:#f3b78540}
 *{box-sizing:border-box;margin:0}
 html{scroll-behavior:smooth}
-body{background:var(--wine);color:var(--cloth);font:400 17px/1.6 "Hanken Grotesk",system-ui,sans-serif}
-h1,h2,h3{font-family:"Rozha One",Georgia,serif;font-weight:400;line-height:1}
-a{color:var(--saffron)}
-:focus-visible{outline:3px solid var(--ribbon);outline-offset:3px}
+body{color:var(--ink);font:400 18px/1.55 "Patrick Hand",system-ui,sans-serif;background-color:var(--paper);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='2'/%3E%3CfeColorMatrix values='0 0 0 0 .4 0 0 0 0 .3 0 0 0 0 .2 0 0 0 .09 0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E")}
+h1,h2,h3{font-family:"Caveat Brush","Patrick Hand",cursive;font-weight:400;line-height:1.02}
+a{color:var(--teal)}
+:focus-visible{outline:3px solid var(--teal);outline-offset:3px}
 .wrap{max-width:1080px;margin:0 auto;padding:0 22px}
-nav{position:sticky;top:0;z-index:5;background:#2e0d13ee;backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
-nav .wrap{display:flex;gap:22px;align-items:center;justify-content:space-between;padding-top:12px;padding-bottom:12px;flex-wrap:wrap}
-nav b{font-family:"Rozha One",serif;font-weight:400;font-size:20px}
-nav div{display:flex;gap:18px;flex-wrap:wrap}nav a{color:var(--cloth);text-decoration:none;font-size:15px}
-#note{background:var(--ribbon);color:var(--wine);text-align:center;padding:8px 14px;font-weight:600;display:none}
-.hero{min-height:92vh;display:grid;place-items:center;text-align:center;position:relative;overflow:hidden;padding:60px 0}
-.ring{position:absolute;width:min(94vw,760px);aspect-ratio:1;animation:spin 60s linear infinite;opacity:.9}
-.ring text{font:600 15.5px "Hanken Grotesk";letter-spacing:.32em;fill:var(--saffron)}
-.plate{position:absolute;width:min(70vw,520px);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,var(--maroon) 0 62%,#0000 63%),conic-gradient(var(--saffron),var(--ribbon),var(--saffron));opacity:.55}
-.hero h1{position:relative;font-size:clamp(54px,13vw,150px);letter-spacing:-.02em}
-.hero p{position:relative;max-width:30ch;margin:18px auto 26px;font-size:19px}
+.sk{border:2.5px solid var(--ink);border-radius:18px 6px 20px 8px/8px 20px 6px 18px;background:#fffaf0;box-shadow:4px 5px 0 var(--ink)}
+nav{position:sticky;top:0;z-index:5;background:var(--paper);border-bottom:2.5px solid var(--ink)}
+nav .wrap{display:flex;gap:18px;align-items:center;justify-content:space-between;padding-top:8px;padding-bottom:8px;flex-wrap:wrap}
+nav .br{display:flex;align-items:center;gap:10px;font-family:"Caveat Brush";font-size:24px;text-decoration:none;color:var(--ink)}nav img{width:46px;height:46px}
+nav div{display:flex;gap:16px;flex-wrap:wrap}nav div a{color:var(--ink);text-decoration:none;font-size:18px}nav div a:hover{text-decoration:underline wavy var(--terra)}
+#note{background:var(--teal);color:var(--paper);text-align:center;padding:8px 14px;display:none}
+.hero{display:grid;place-items:center;text-align:center;position:relative;overflow:hidden;padding:56px 0 64px}
+.stage{position:relative;width:min(88vw,520px);aspect-ratio:1;display:grid;place-items:center;margin:0 auto 6px}
+.ring{position:absolute;inset:0;animation:spin 70s linear infinite}
+.ring text{font:700 17px "Patrick Hand";letter-spacing:.3em;fill:var(--teal)}
+.stage img.logo{width:66%;position:relative;filter:drop-shadow(4px 5px 0 var(--ink))}
+.hero h1{font-size:clamp(44px,9vw,92px);color:var(--terra);-webkit-text-stroke:2px var(--ink);paint-order:stroke fill;text-shadow:4px 4px 0 var(--ink)}
+.hero p{max-width:34ch;margin:14px auto 22px;font-size:21px}
 @keyframes spin{to{transform:rotate(360deg)}}
 @media(prefers-reduced-motion:reduce){.ring{animation:none}html{scroll-behavior:auto}}
-.btn{display:inline-block;background:var(--saffron);color:var(--wine);border:0;border-radius:999px;padding:13px 26px;font:600 16px inherit;font-family:inherit;text-decoration:none;cursor:pointer;margin:4px}
-.btn.alt{background:none;color:var(--cloth);border:1.5px solid var(--cloth)}
-section{padding:84px 0;border-top:1px solid var(--line)}
-section h2{font-size:clamp(36px,6vw,64px);margin-bottom:12px}
-.lead{max-width:58ch;opacity:.85;margin-bottom:34px}
-.cloth{background:var(--cloth);color:var(--wine)}
-.cloth .lead{opacity:.8}.cloth a{color:var(--maroon)}
-.svc{list-style:none;padding:0}
-.svc li{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.3fr);gap:20px;padding:22px 0;border-bottom:1px solid var(--line)}
-.svc h3{font-size:clamp(24px,4vw,38px)}
-@media(max-width:640px){.svc li{grid-template-columns:1fr;gap:6px}}
-.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px}
-.tabs button{border:1.5px solid var(--saffron);background:none;color:var(--cloth);border-radius:999px;padding:7px 16px;font:inherit;cursor:pointer}
-.tabs button[aria-pressed=true]{background:var(--saffron);color:var(--wine)}
-.item{display:grid;grid-template-columns:1fr auto auto;gap:14px;align-items:center;padding:12px 0;border-bottom:1px dashed var(--line)}
-.item small{display:block;opacity:.7}
-.q{display:flex;align-items:center;gap:8px}.q button{width:34px;height:34px;border-radius:50%;border:1.5px solid var(--saffron);background:none;color:var(--cloth);font-size:20px;cursor:pointer}
-.q span{min-width:22px;text-align:center}
-.bar{position:sticky;bottom:0;background:var(--maroon);padding:14px 18px;margin-top:20px;border-radius:14px;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
-form{display:grid;gap:14px;max-width:640px}
-label{display:grid;gap:4px;font-weight:600;font-size:15px}
-input,select,textarea{font:inherit;padding:11px 13px;border-radius:10px;border:1.5px solid #5a1f2655;background:#fff;color:var(--wine)}
-.dark input,.dark select,.dark textarea{border-color:var(--line)}
+.btn{display:inline-block;background:var(--terra);color:var(--ink);border:2.5px solid var(--ink);border-radius:14px 6px 16px 8px/8px 16px 6px 14px;box-shadow:3px 4px 0 var(--ink);padding:10px 22px;font:400 20px "Patrick Hand";text-decoration:none;cursor:pointer;margin:6px}
+.btn:hover{transform:translate(-1px,-1px);box-shadow:4px 5px 0 var(--ink)}
+.btn.alt{background:var(--paper)}.btn.teal{background:var(--teal);color:var(--paper)}
+section{padding:72px 0;border-top:2.5px dashed var(--ink)}
+section h2{font-size:clamp(38px,6vw,64px);margin-bottom:8px;text-decoration:underline wavy var(--peach) 4px;text-underline-offset:8px}
+.lead{max-width:60ch;margin:14px 0 30px}
+.band{background:var(--soft)}
+.teal{background:var(--teal);color:var(--paper)}.teal a{color:var(--peach)}.teal h2{text-decoration-color:var(--terra)}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-bottom:34px}
+.steps div{padding:16px 18px}.steps b{font:400 34px "Caveat Brush";color:var(--terra);display:block}
+@media(max-width:700px){.steps{grid-template-columns:1fr}}
+.svc{list-style:none;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+.svc li{padding:18px 20px}.svc h3{font-size:30px;color:var(--teal);margin-bottom:4px}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:22px}
+.tabs button{border:2px solid var(--ink);background:var(--paper);color:var(--ink);border-radius:12px 5px 14px 6px/6px 14px 5px 12px;padding:5px 15px;font:inherit;cursor:pointer}
+.tabs button[aria-pressed=true]{background:var(--teal);color:var(--paper);box-shadow:2px 3px 0 var(--ink)}
+.menu{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:22px}
+.card{overflow:hidden;display:flex;flex-direction:column}
+.card img,.ph{width:100%;aspect-ratio:4/3;object-fit:cover;border-bottom:2.5px solid var(--ink);display:block}
+.ph{background:var(--peach);display:grid;place-items:center}.ph svg{width:46%}
+.card h3{font-size:27px;padding:12px 16px 0}.nt{padding:0 16px;font-size:15px;opacity:.75}
+.opt{display:flex;align-items:center;gap:10px;padding:8px 16px;border-top:1.5px dashed #1b171355;margin-top:8px}.opt span{flex:1}
+.opt:last-child{margin-bottom:6px}
+.q{display:flex;align-items:center;gap:7px}.q button{width:32px;height:32px;border-radius:50%;border:2px solid var(--ink);background:var(--paper);font-size:20px;line-height:1;cursor:pointer}.q button:hover{background:var(--terra)}
+.q span{min-width:20px;text-align:center;flex:none}
+.bar{position:sticky;bottom:10px;margin-top:26px;padding:12px 18px;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;background:var(--peach)}
+.links{margin-top:22px}
+form{display:grid;gap:14px;max-width:680px}
+label{display:grid;gap:4px;font-size:17px}
+input,select,textarea{font:inherit;padding:9px 12px;border-radius:10px 4px 12px 5px;border:2px solid var(--ink);background:#fffaf0;color:var(--ink)}
 .row{display:grid;grid-template-columns:1fr 1fr;gap:14px}@media(max-width:560px){.row{grid-template-columns:1fr}}
-.cal{max-width:420px;margin-bottom:18px}
-.cal header{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}.cal header b{font-family:"Rozha One";font-weight:400;font-size:24px}
-.cal header button{background:none;border:1.5px solid var(--maroon);color:var(--maroon);border-radius:50%;width:36px;height:36px;font-size:18px;cursor:pointer}
-.grid{display:grid;grid-template-columns:repeat(7,1fr);gap:4px;text-align:center}
-.grid i{font-style:normal;font-size:13px;opacity:.6}
-.grid button{aspect-ratio:1;border-radius:50%;border:0;background:#5a1f2614;color:var(--wine);font:inherit;cursor:pointer}
-.grid button[disabled]{background:none;opacity:.4;cursor:not-allowed}
-.grid button[aria-pressed=true]{background:var(--maroon);color:var(--cloth)}
-.leg{display:flex;gap:14px;flex-wrap:wrap;font-size:14px;margin-bottom:10px}.leg span:before{content:'';display:inline-block;width:12px;height:12px;border-radius:50%;margin-right:6px;background:var(--c)}
-.grid button small{display:block;font-size:9px;line-height:1.1;opacity:.85}.grid button{aspect-ratio:auto;min-height:48px;padding:4px 0;border-radius:10px}
-.grid button.l{background:#f2a33a66}.grid button.t{background:#f0719b33}
-.terms{background:#5a1f260d;border-radius:12px;padding:16px 20px;max-height:240px;overflow:auto;font-size:15px}
-.terms li{margin:0 0 8px 18px}
-.chk{display:flex;gap:10px;align-items:flex-start;font-weight:400}.chk input{margin-top:5px}
-.msg{padding:12px 16px;border-radius:10px;font-weight:600;display:none}.msg.ok{display:block;background:#2e7d4f;color:#fff}.msg.er{display:block;background:#b3261e;color:#fff}
-footer{padding:50px 0;border-top:1px solid var(--line);text-align:center;opacity:.9}
+.orderbox{margin-top:40px;padding:24px}
+.leg{display:flex;gap:14px;flex-wrap:wrap;font-size:16px;margin-bottom:10px}.leg span:before{content:'';display:inline-block;width:14px;height:14px;border:2px solid var(--ink);border-radius:50%;margin-right:6px;vertical-align:-2px;background:var(--c)}
+.cal{max-width:430px;margin-bottom:14px;padding:14px}
+.cal header{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}.cal header b{font:400 28px "Caveat Brush"}
+.cal header button{background:var(--paper);border:2px solid var(--ink);border-radius:50%;width:34px;height:34px;font-size:18px;cursor:pointer}
+.grid{display:grid;grid-template-columns:repeat(7,1fr);gap:4px;text-align:center}.grid i{font-style:normal;font-size:14px;opacity:.6}
+.grid button{min-height:50px;padding:3px 0;border-radius:10px 4px 10px 5px;border:1.5px solid var(--ink);background:#d9ead3;color:var(--ink);font:inherit;cursor:pointer}
+.grid button small{display:block;font-size:10px;line-height:1.1}
+.grid button.l{background:var(--peach)}.grid button.t{background:#f9d6c4}
+.grid button[disabled]{background:#0000;border-color:#1b171340;opacity:.5;cursor:not-allowed}
+.grid button[aria-pressed=true]{background:var(--teal);color:var(--paper);box-shadow:2px 2px 0 var(--ink)}
+.terms{padding:14px 18px 14px 34px;max-height:250px;overflow:auto;font-size:16px}.terms li{margin-bottom:8px}
+.chk{display:flex;gap:10px;align-items:flex-start}.chk input{margin-top:6px}
+.msg{padding:10px 14px;border:2px solid var(--ink);border-radius:10px;display:none}.msg.ok{display:block;background:#cfe8d4}.msg.er{display:block;background:#f8c9bd}
+footer{padding:36px 0;border-top:2.5px solid var(--ink);text-align:center;font-size:16px}
 </style></head><body>
 <div id="note"></div>
-<nav><div class="wrap"><b>Yasmeen Ka Dastarkhan</b><div><a href="#services">Services</a><a href="#menu">Menu & order</a><a href="#book">Book catering</a><a href="#contact">Contact</a></div></div></nav>
+<nav><div class="wrap"><a class="br" href="#top"><img src="logo.png" alt="">Yasmeen Ka Dastarkhan</a><div><a href="#services">What we cook</a><a href="#menu">Menu</a><a href="#book">Book catering</a><a href="#contact">Contact</a></div></div></nav>
+<header class="hero" id="top"><div class="stage"><svg class="ring" viewBox="0 0 400 400" aria-hidden="true"><defs><path id="c" d="M200,200 m-186,0 a186,186 0 1,1 372,0 a186,186 0 1,1 -372,0"/></defs><text><textPath href="#c">HEALTHY &amp; FRESH ✦ HALAL &amp; HOMEMADE ✦ HEALTHY &amp; FRESH ✦ HALAL &amp; HOMEMADE ✦ </textPath></text></svg><img class="logo" src="logo.png" alt="Yasmeen Ka Dastarkhan: a hijabi chef with a spoon and spatula"></div>
+<div class="wrap"><h1>Desi food, home-cooked.</h1><p>Warrenville, Illinois. Catering, live cooking and weekly meal plans across the USA.</p><a class="btn" href="#menu">Order from the menu</a><a class="btn alt" href="#book">Book catering</a></div></header>
 
-<header class="hero"><svg class="ring" viewBox="0 0 400 400" aria-hidden="true"><defs><path id="c" d="M200,200 m-170,0 a170,170 0 1,1 340,0 a170,170 0 1,1 -340,0"/></defs><text><textPath href="#c">HEALTHY &amp; FRESH ✦ HALAL &amp; HOMEMADE ✦ HEALTHY &amp; FRESH ✦ HALAL &amp; HOMEMADE ✦</textPath></text></svg><div class="plate" aria-hidden="true"></div>
-<div class="wrap"><h1>Yasmeen Kā Dastarkhān</h1><p>Desi home cooking from Warrenville, Illinois, laid out for your table anywhere in the USA.</p><a class="btn" href="#menu">Order from the menu</a><a class="btn alt" href="#book">Book catering</a></div></header>
-
-<section id="services"><div class="wrap"><h2>What we cook</h2><p class="lead">Fresh, halal and made in small batches in a certified home kitchen.</p>
+<section id="services" class="band"><div class="wrap"><h2>What we cook</h2><p class="lead">Fresh, halal and made in small batches in a certified home kitchen.</p>
 <ul class="svc">
-<li><h3>Desi meals</h3><p>Biryani, karahi, curries, daal chawal, sabzi roti. Real spices, quality ingredients.</p></li>
-<li><h3>Street food & fusion</h3><p>Chaat, samosas, rolls and Indo-Pak favourites with a modern twist.</p></li>
-<li><h3>Desserts</h3><p>Gulab jamun, kheer, rasmalai and more, made fresh in small batches.</p></li>
-<li><h3>Drinks</h3><p>Mango lassi, masala chai and rose milk.</p></li>
-<li><h3>Weekly meal plans</h3><p>Customizable homemade food delivered weekly for busy professionals, students and families.</p></li>
-<li><h3>Catering & live cooking</h3><p>Birthdays, graduations, bridal and baby showers, religious events. Live cooking available across the USA for large events.</p></li>
+<li class="sk"><h3>Desi meals</h3><p>Biryani, karahi, curries, daal chawal, sabzi roti. Real spices, quality ingredients.</p></li>
+<li class="sk"><h3>Street food & fusion</h3><p>Chaat, samosas, rolls and Indo-Pak favourites with a modern twist.</p></li>
+<li class="sk"><h3>Desserts & drinks</h3><p>Gulab jamun, kheer, rasmalai, mango lassi, masala chai and rose milk.</p></li>
+<li class="sk"><h3>Weekly meal plans</h3><p>Customizable homemade food delivered weekly for busy professionals, students and families.</p></li>
+<li class="sk"><h3>Catering & live cooking</h3><p>Birthdays, graduations, bridal and baby showers, religious events. Live cooking across the USA for large events.</p></li>
 </ul></div></section>
 
-<section id="menu" class="dark"><div class="wrap"><h2>Menu & order</h2><p class="lead">Pick your dishes, send the order, and we confirm by phone or email. <span id="menuNote"></span></p>
-<div class="tabs" id="tabs"></div><div id="items"></div>
-<div class="bar"><div><b id="total">$0.00</b> <span id="count"></span></div><a class="btn" href="#checkout" id="toCheckout">Review order</a></div>
-<form id="orderForm" style="margin-top:40px" class="dark"><h3 id="checkout" style="font-size:32px">Your order</h3><div id="summary"></div>
+<section id="menu"><div class="wrap"><h2>Menu</h2><p class="lead">Pick your dishes, send the order, and we confirm by phone or email. <span id="menuNote"></span></p>
+<div class="steps"><div class="sk"><b>1</b>Choose dishes below</div><div class="sk"><b>2</b>Send your order. Yasmeen confirms the price</div><div class="sk"><b>3</b>Pickup in Warrenville or local delivery</div></div>
+<div class="tabs" id="tabs"></div><div class="menu" id="items"></div>
+<div class="bar sk"><div><b id="total" style="font:400 28px 'Caveat Brush'">$0.00</b> <span id="count"></span></div><a class="btn teal" href="#checkout" id="toCheckout">Review order</a></div>
+<div class="links"><a class="btn alt" href="https://drive.google.com/file/d/1zj9wL8BijPrMQw2Mec3b0jkagJ8WEFTF/view?usp=sharing">Full menu (PDF)</a><a class="btn alt" href="https://drive.google.com/file/d/1kNSi5DowuYChIHk_C_gFjIE0MqtwmyYg/view?usp=sharing">Bulk event menu (PDF)</a><a class="btn alt" href="https://wa.me/qr/JMCTBJ3DIS2HD1">Order on WhatsApp</a></div>
+<form id="orderForm" class="sk orderbox"><h3 id="checkout" style="font-size:36px">Your order</h3><div id="summary"></div>
 <div class="row"><label>Name<input name="name" required></label><label>Phone<input name="phone" type="tel" required></label></div>
 <div class="row"><label>Email<input name="email" type="email"></label><label>Needed on<input name="date" type="date" required></label></div>
 <div class="row"><label>Pickup or delivery<select name="mode"><option>Pickup (Warrenville, IL 60555)</option><option>Local delivery (+$0.75/mile)</option></select></label><label>Delivery address<input name="address"></label></div>
@@ -95,20 +103,20 @@ footer{padding:50px 0;border-top:1px solid var(--line);text-align:center;opacity
 <label>Allergies<input name="allergies"></label>
 <button class="btn" type="submit">Send order</button><div class="msg" id="orderMsg" role="status"></div></form></div></section>
 
-<section id="book" class="cloth"><div class="wrap"><h2>Book catering</h2><p class="lead">Choose your event day or days. Bookings need at least one week's notice. Greyed days are taken or too soon.</p>
-<div class="leg"><span style="--c:#5a1f2640">Available</span><span style="--c:#f2a33a">Limited hours</span><span style="--c:#bbb">Booked or unavailable</span></div><div class="cal" id="cal"></div><p id="calNote" style="max-width:58ch;margin-bottom:18px;font-size:15px"></p>
+<section id="book" class="band"><div class="wrap"><h2>Book catering</h2><p class="lead">Choose your event day or days. Bookings need at least one week's notice. Greyed days are taken or too soon.</p>
+<div class="leg"><span style="--c:#5a1f2640">Available</span><span style="--c:#f2a33a">Limited hours</span><span style="--c:#bbb">Booked or unavailable</span></div><div class="cal sk" id="cal"></div><p id="calNote" style="max-width:58ch;margin-bottom:18px;font-size:15px"></p>
 <form id="bookForm"><div id="picked"><b>No dates chosen yet.</b></div>
 <div class="row"><label>Name<input name="name" required></label><label>Phone<input name="phone" type="tel" required></label></div>
 <div class="row"><label>Email<input name="email" type="email" required></label><label>Event type<select name="event"><option>Birthday</option><option>Graduation</option><option>Bridal / baby shower</option><option>Religious event</option><option>Live cooking</option><option>Weekly meal plan</option><option>Other</option></select></label></div>
 <div class="row"><label>Service<select name="service"><option>On-site cooking</option><option>Catering (food delivered)</option><option>Home-prep meals</option></select></label><label>Guests<input name="guests" type="number" min="1" required></label></div>
 <div class="row"><label>Event city & state<input name="place" required></label><label>Allergies or dietary needs<input name="allergies"></label></div>
 <label>Dishes you would like (menu is needed at least 2 days before the date)<textarea name="notes" rows="3"></textarea></label>
-<h3 style="font-size:28px;margin-top:8px">Booking guidelines & agreement</h3><ol class="terms" id="terms"></ol>
+<h3 style="font-size:32px;margin-top:8px">Booking guidelines & agreement</h3><ol class="terms sk" id="terms"></ol>
 <label class="chk"><input type="checkbox" name="agree" required> I have read and accept the guidelines above.</label>
 <label>Type your full name as signature<input name="sign" required></label>
-<button class="btn" type="submit" style="background:var(--maroon);color:var(--cloth)">Request booking</button><div class="msg" id="bookMsg" role="status"></div></form></div></section>
+<button class="btn" type="submit" style="background:var(--teal);color:var(--paper)">Request booking</button><div class="msg" id="bookMsg" role="status"></div></form></div></section>
 
-<section id="contact"><div class="wrap"><h2>Say salaam</h2><p class="lead">Orders also open by phone, email, WhatsApp, Instagram and Facebook.</p>
+<section id="contact" class="teal"><div class="wrap"><h2>Say salaam</h2><p class="lead">Orders also open by phone, email, WhatsApp, Instagram and Facebook.</p>
 <a class="btn" href="tel:+13312697223">+1 (331) 269-7223</a><a class="btn alt" href="mailto:yasmeendastarkhan@gmail.com">Email</a><a class="btn alt" href="https://www.instagram.com/yasmeenkadastarkhan/">Instagram</a><a class="btn alt" href="https://linktr.ee/yasmeenkadastarkhan">Linktree</a></div></section>
 <footer>© Yasmeen Ka Dastarkhan · Homemade, Halal, Healthy · Warrenville, IL 60555</footer>
 
@@ -117,11 +125,7 @@ footer{padding:50px 0;border-top:1px solid var(--line);text-align:center;opacity
 const API="";
 const EMAIL="yasmeendastarkhan@gmail.com";
 const $=s=>document.querySelector(s),esc=t=>String(t).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
-let menu=[
-["Starters & Desserts","Beef Samosa","per piece",1.75],["Starters & Desserts","Aloo Samosa","per piece",1.5],["Starters & Desserts","Chicken Patties","per piece",1.6],["Starters & Desserts","Chicken Shawarma","per piece",6.5],["Starters & Desserts","Papri Chaat","per bowl",4.5],["Starters & Desserts","Chana Chaat","half tray",45],["Starters & Desserts","Chana Chaat","full tray",90],["Starters & Desserts","Kheer","half tray",55],["Starters & Desserts","Kheer","full tray",110],["Starters & Desserts","Gulab Jamun","half tray",60],["Starters & Desserts","Gulab Jamun","full tray",120],
-["Curries","Chicken Karahi / Korma","half tray",60],["Curries","Chicken Karahi / Korma","full tray",130],["Curries","Beef Karahi / Korma","half tray",70],["Curries","Beef Karahi / Korma","full tray",140],["Curries","Haleem / Nihari","half tray",70],["Curries","Haleem / Nihari","full tray",160],["Curries","Aloo Palak / Mix Vegetables","half tray",45],["Curries","Aloo Palak / Mix Vegetables","full tray",100],
-["Rice","Chicken Biryani","half tray",60],["Rice","Chicken Biryani","full tray",130],["Rice","Chicken Pulao with Raita","box",7.99],["Rice","Plain Rice","half tray",35],["Rice","Plain Rice","full tray",60],["Rice","Zeera Rice","full tray",70]
-].map(r=>({cat:r[0],name:r[1],unit:r[2],price:r[3]}));
+let menu=[["Starters & Snacks","Beef Samosa","per piece",1.75,"",""],["Starters & Snacks","Aloo Samosa","per piece",1.5,"",""],["Starters & Snacks","Pakora (Chicken / Potato / Onion / Mixed Veg)","half tray",40,"$40–$50 by type",""],["Starters & Snacks","Pakora (Chicken / Potato / Onion / Mixed Veg)","full tray",80,"$80–$90 by type",""],["Starters & Snacks","Chicken Patties","per piece",1.6,"",""],["Starters & Snacks","Spring Roll","per piece",1.6,"",""],["Starters & Snacks","Wonton (Chicken)","per piece",1.5,"",""],["Starters & Snacks","Beef Shammi Kabab","per piece",2,"",""],["Starters & Snacks","Shami Kabab with Paratha","one plate",6.5,"",""],["Rolls, Burgers & Wraps","Chicken Roll","two pieces",6,"",""],["Rolls, Burgers & Wraps","Bihari Boti with Tortilla","one piece",5.5,"",""],["Rolls, Burgers & Wraps","Chicken Paratha Roll","one piece",6.5,"",""],["Rolls, Burgers & Wraps","Chicken Shawarma","one piece",6.5,"",""],["Rolls, Burgers & Wraps","Bun Kabab (Desi Style)","one, with fries",6.5,"",""],["Rolls, Burgers & Wraps","Chicken Burger","one, with fries",6.99,"",""],["Rolls, Burgers & Wraps","Cheeseburger","one, with fries",6.99,"",""],["Rolls, Burgers & Wraps","Chicken Tikka Burger","one, with fries",7.5,"",""],["Rolls, Burgers & Wraps","Gyro Beef Wrap","one piece",6.99,"",""],["Rolls, Burgers & Wraps","Chicken Club Sandwich","with fries",4,"",""],["Rolls, Burgers & Wraps","Philly Chicken Sandwich","with fries",6,"",""],["Chaat & Dips","Dhahi Bara Papri Chat","half tray",50,"",""],["Chaat & Dips","Dhahi Bara Papri Chat","full tray",100,"",""],["Chaat & Dips","Dhahi Phulki","half tray",45,"",""],["Chaat & Dips","Dhahi Phulki","full tray",90,"",""],["Chaat & Dips","Chana Chaat","half tray",45,"",""],["Chaat & Dips","Chana Chaat","full tray",90,"",""],["Chaat & Dips","Papri Chaat","one bowl",4.5,"",""],["Chaat & Dips","7-Layer Dip with Chips (Chicken or Beef Ground)","half tray",65,"",""],["Chaat & Dips","7-Layer Dip with Chips (Chicken or Beef Ground)","full tray",140,"",""],["Desserts & Bakery","Cupcake / Brownie Slice","per piece",1,"",""],["Desserts & Bakery","Banana Bread","full tray",70,"",""],["Desserts & Bakery","Kheer","half tray",55,"",""],["Desserts & Bakery","Kheer","full tray",110,"",""],["Desserts & Bakery","Siwaiyan","half tray",55,"",""],["Desserts & Bakery","Siwaiyan","full tray",110,"",""],["Desserts & Bakery","Fruit Trifle","half tray",60,"",""],["Desserts & Bakery","Fruit Trifle","full tray",120,"",""],["Desserts & Bakery","Zarda","half tray",60,"",""],["Desserts & Bakery","Zarda","full tray",110,"",""],["Desserts & Bakery","Gulab Jamun","half tray",60,"",""],["Desserts & Bakery","Gulab Jamun","full tray",120,"",""],["Desserts & Bakery","Pineapple Delight","full tray",85,"",""],["Desserts & Bakery","Fruit / Veggie Salad","full tray",60,"",""],["Nazr o Niaz","Chicken Pulao / Biryani with Raita","box",7.99,"","Muharram & Saffar menu"],["Nazr o Niaz","Beef Pulao / Biryani with Raita","box",8.99,"","Muharram & Saffar menu"],["Nazr o Niaz","Goat Pulao / Biryani with Raita","box",12.99,"$12.99–$14.00","Muharram & Saffar menu"],["Nazr o Niaz","Chicken or Beef Haleem with Naan","box",9.99,"","Muharram & Saffar menu"],["Nazr o Niaz","Chicken Boneless Karahi with Naan","box",9.99,"","Muharram & Saffar menu"],["Nazr o Niaz","Aloo Keema (Beef)","tray",100,"","Muharram & Saffar menu"],["Nazr o Niaz","Dum Ka Keema","tray",160,"","Muharram & Saffar menu"],["Nazr o Niaz","Chicken Tikka with Naan or Rice","box",8,"$8.00–$9.99","Muharram & Saffar menu"],["Nazr o Niaz","Bun Kabab / Shami Kabab Roll","box",6,"","Muharram & Saffar menu"],["Nazr o Niaz","Chicken Paratha Roll","box",6,"","Muharram & Saffar menu"],["Nazr o Niaz","Lahori / Khatti Daal","tray",70,"$70–$80","Muharram & Saffar menu"],["Nazr o Niaz","Chicken Manchurian / Chow Mein","tray",100,"$100–$150","Muharram & Saffar menu"],["Nazr o Niaz","Goat Karahi / Mutton Biryani","tray",180,"","Muharram & Saffar menu"],["Nazr o Niaz","Kheer / Halwa / Fruit Trifle","tray",110,"","Muharram & Saffar menu"],["Curries","Chicken Karahi / Korma","half tray",60,"",""],["Curries","Chicken Karahi / Korma","full tray",130,"",""],["Curries","Beef Karahi / Korma","half tray",70,"",""],["Curries","Beef Karahi / Korma","full tray",140,"",""],["Curries","Goat Karahi / Korma","half tray",70,"",""],["Curries","Goat Karahi / Korma","full tray",180,"",""],["Curries","Dum Ka Keema / Aloo Keema","half tray",70,"",""],["Curries","Dum Ka Keema / Aloo Keema","full tray",160,"",""],["Curries","Daal Gosht (Veal / Goat)","half tray",70,"",""],["Curries","Daal Gosht (Veal / Goat)","full tray",180,"",""],["Curries","Bhuna Keema (Beef)","half tray",70,"",""],["Curries","Bhuna Keema (Beef)","full tray",160,"",""],["Curries","Haleem / Nihari","half tray",70,"",""],["Curries","Haleem / Nihari","full tray",160,"",""],["Vegetarian","Aloo Palak / Mix Vegetables","half tray",45,"",""],["Vegetarian","Aloo Palak / Mix Vegetables","full tray",100,"",""],["Vegetarian","Hyderabadi Khatti Daal","half tray",45,"",""],["Vegetarian","Hyderabadi Khatti Daal","full tray",100,"",""],["Vegetarian","Channa Daal Fry / Masoor Daal","half tray",40,"",""],["Vegetarian","Channa Daal Fry / Masoor Daal","full tray",110,"",""],["Rice","Chicken / Veal / Goat Biryani","half tray",60,"$60–$80 by meat",""],["Rice","Chicken / Veal / Goat Biryani","full tray",130,"$130–$180 by meat",""],["Rice","Chicken / Veal / Goat Pulao","half tray",60,"$60–$80 by meat",""],["Rice","Chicken / Veal / Goat Pulao","full tray",130,"$130–$180 by meat",""],["Rice","Keema Masoor Biryani","half tray",65,"",""],["Rice","Keema Masoor Biryani","full tray",140,"",""],["Rice","Choley / Matar Pulao","half tray",60,"",""],["Rice","Choley / Matar Pulao","full tray",100,"",""],["Rice","Masoor Pulao","half tray",45,"",""],["Rice","Masoor Pulao","full tray",100,"",""],["Rice","Veg Biryani / Mutter Rice","half tray",45,"",""],["Rice","Veg Biryani / Mutter Rice","full tray",100,"",""],["Rice","Plain Rice","half tray",35,"",""],["Rice","Plain Rice","full tray",60,"",""],["Rice","Zeera Rice","half tray",40,"",""],["Rice","Zeera Rice","full tray",70,"",""],["Rice","Veg Pulao with Raita","box",7,"",""]].map(r=>({cat:r[0],name:r[1],unit:r[2],price:r[3],pnote:r[4],note:r[5]}));
 let days={},settings={},openDefault=true,cart={},cat=null,picked=[],view=new Date(new Date().getFullYear(),new Date().getMonth(),1);
 let terms=["Minimum order: $50.00 (excluding delivery) for single or weekly meal orders.","Catering needs one week notice; food orders need 48 to 72 hours. Share your menu at least 2 days before your date.","Deposit: 50% non-refundable for on-site cooking and catering, 70% for home-prep meals. Catering deposits are due 14 days before the date.","Cancelling within one week of the event forfeits the deposit and final payment. Cancel in writing by email or text.","Travel is $0.75 per mile; parking and tolls are added. Tell us about allergies before service.","Requesting a booking is not a confirmed booking. Yasmeen sends the quote and contract for signature."];
 const money=n=>"$"+n.toFixed(2),iso=d=>d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0");
@@ -131,9 +135,13 @@ async function load(){if(API){try{const r=await(await fetch(API)).json();if(r.me
  $("#calNote").textContent=settings.calendar_note||"";
  if(settings.menu_note)$("#menuNote").textContent=settings.menu_note;
  cat=menu[0].cat;drawMenu();drawCal();$("#terms").innerHTML=terms.map(t=>{const i=t.indexOf(": ");return i>0&&i<40?"<li><b>"+esc(t.slice(0,i))+".</b> "+esc(t.slice(i+2))+"</li>":"<li>"+esc(t)+"</li>"}).join("")}
+const PH="<div class='ph'><svg viewBox='0 0 80 70' fill='none' stroke='#1b1713' stroke-width='3' stroke-linecap='round'><path d='M10 36h60c0 16-12 26-30 26S10 52 10 36z'/><path d='M28 26c-4-6 4-8 0-14M42 26c-4-6 4-8 0-14M56 26c-4-6 4-8 0-14'/></svg></div>";
+const slug=t=>t.toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"");
+const pic=(m)=>{const p=m.photo||slug(m.name)+".jpg";return `<img loading="lazy" src="${/^https?:/.test(p)?esc(p):"images/"+esc(p)}" alt="${esc(m.name)}" onerror="this.outerHTML=PH">`};
 function drawMenu(){const cats=[...new Set(menu.map(m=>m.cat))];
  $("#tabs").innerHTML=cats.map(c=>`<button type="button" aria-pressed="${c==cat}" data-c="${esc(c)}">${esc(c)}</button>`).join("");
- $("#items").innerHTML=menu.map((m,i)=>m.cat!=cat?"":`<div class="item"><div>${esc(m.name)}<small>${esc(m.unit)}${m.note?" · "+esc(m.note):""}</small></div><b>${m.pnote?esc(m.pnote):money(m.price)}</b><div class="q"><button type="button" data-i="${i}" data-d="-1" aria-label="Remove one ${esc(m.name)}">−</button><span>${cart[i]||0}</span><button type="button" data-i="${i}" data-d="1" aria-label="Add one ${esc(m.name)}">+</button></div></div>`).join("");
+ const g={};menu.forEach((m,i)=>{if(m.cat==cat)(g[m.name]=g[m.name]||[]).push(i)});
+ $("#items").innerHTML=Object.values(g).map(ix=>{const m0=menu[ix[0]],ph=menu[ix.find(i=>menu[i].photo)||ix[0]];return `<article class="card sk">${pic(ph)}<h3>${esc(m0.name)}</h3>${m0.note?`<p class="nt">${esc(m0.note)}</p>`:""}${ix.map(i=>{const m=menu[i];return `<div class="opt"><span>${esc(m.unit)}</span><b>${m.pnote?esc(m.pnote):money(m.price)}</b><div class="q"><button type="button" data-i="${i}" data-d="-1" aria-label="Remove one ${esc(m.name)}">−</button><span>${cart[i]||0}</span><button type="button" data-i="${i}" data-d="1" aria-label="Add one ${esc(m.name)}">+</button></div></div>`}).join("")}</article>`}).join("");
  let t=0,n=0,rows=[];for(const i in cart){if(cart[i]>0){t+=cart[i]*menu[i].price;n+=cart[i];rows.push(`${cart[i]} × ${menu[i].name} (${menu[i].unit}) = ${money(cart[i]*menu[i].price)}`)}}
  $("#total").textContent=money(t);$("#count").textContent=n?`· ${n} item${n>1?"s":""}`:"";
  $("#summary").innerHTML=rows.length?rows.map(r=>"<div>"+esc(r)+"</div>").join("")+`<div><b>Estimated total ${money(t)}</b> (Yasmeen confirms the final price; ranges and delivery are added then)</div>`:"<div>Nothing chosen yet. Add dishes above.</div>";

@@ -13,6 +13,9 @@ Day-to-day, you only edit the sheet:
 - **Settings**: banner message, menu note, calendar note.
 - **Bookings**: set Status to `Confirmed` and those dates turn Booked on the site automatically.
 
+## Photos
+Upload dish photos to the repo's `images` folder, named after the dish in lowercase with dashes: `beef-samosa.jpg`, `chicken-biryani.jpg`, `gulab-jamun.jpg`. The site finds them by itself. Both sizes of a dish share one photo. If a dish has no photo yet, a hand-drawn bowl is shown. To use a different file name or a web link, type it in the Photo column of the Menu or Specials tab. Keep photos under about 300 KB (square or 4:3 crops look best).
+
 ## 2. Add the backend
 In the Google Sheet: Extensions > Apps Script > delete the sample code > paste `Code.gs` > Save.
 Deploy > New deployment > type **Web app** > Execute as **Me**, Who has access **Anyone** > Deploy > allow permissions.
