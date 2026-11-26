@@ -1,4 +1,3 @@
-
 // Yasmeen Ka Dastarkhan backend. Paste into Extensions > Apps Script of the Google Sheet.
 // Tabs used: Menu, Specials, Calendar, Terms, Settings (read) and Orders, Bookings (written).
 const OWNER = "yasmeendastarkhan@gmail.com";
