@@ -1,35 +1,35 @@
-# Yasmeen Ka Dastarkhan website update
+# Setup (about 15 minutes, free)
 
-## Files
-- `index.html`: website.
-- `logo.png`: brand logo.
-- `images/`: optional folder for your own dish photographs.
-- `YKD_Website_Sheet.xlsx`: master workbook to upload/convert to Google Sheets.
-- `Code.gs`: Apps Script backend (same order/booking data flow).
+## 1. Make your Google Sheet
+Google Drive > New > File upload > `YKD_Website_Sheet.xlsx` > open it > **File > Save as Google Sheets**.
+Read the README tab. Your menu, terms, November calendar and settings are already filled in.
+Delete the "Example" rows on Orders and Bookings once you have seen how they look.
 
-## Important: reconnect the existing Apps Script URL
-The original ZIP supplied for review had an empty API setting. In `index.html`, find:
+Day-to-day, you only edit the sheet:
+- **Menu**: change prices, add dishes, set Available to `no` to hide one.
+- **Specials**: seasonal or limited dishes (Eid, Muharram, Tabaruk box). They show first on the site and expire by their dates.
+- **Calendar**: one row per date: Available, Limited (label like "After 6pm"), Booked, Off, Tentative. Add rows for December onward.
+- **Terms**: the booking guidelines clients must accept.
+- **Settings**: banner message, menu note, calendar note.
+- **Bookings**: set Status to `Confirmed` and those dates turn Booked on the site automatically.
 
-```js
-const API="PASTE_YOUR_EXISTING_APPS_SCRIPT_WEB_APP_URL_HERE";
-```
+## Photos
+Upload dish photos to the repo's `images` folder, named after the dish in lowercase with dashes: `beef-samosa.jpg`, `chicken-biryani.jpg`, `gulab-jamun.jpg`. The site finds them by itself. Both sizes of a dish share one photo. If a dish has no photo yet, a hand-drawn bowl is shown. To use a different file name or a web link, type it in the Photo column of the Menu or Specials tab. Keep photos under about 300 KB (square or 4:3 crops look best).
 
-Replace the text inside the quotes with your existing deployed Apps Script **Web app URL** (the URL ending in `/exec`). Do not use the deployment ID by itself. Keep the URL private; do not post it publicly. If you already have a working live URL, reuse that exact URL.
+## 2. Add the backend
+In the Google Sheet: Extensions > Apps Script > delete the sample code > paste `Code.gs` > Save.
+Deploy > New deployment > type **Web app** > Execute as **Me**, Who has access **Anyone** > Deploy > allow permissions.
+Copy the Web App URL.
 
-The Apps Script backend is not intentionally changed by this website update. Do not redeploy it unless you separately change `Code.gs`.
+## 3. Connect the site
+In `index.html`, set `const API="PASTE_URL_HERE";`.
+After editing `Code.gs` later, use Deploy > Manage deployments > edit > New version, so the URL stays the same.
 
-## Upload the workbook
-Upload `YKD_Website_Sheet.xlsx` to Google Drive, open it with Google Sheets, and use it as the same spreadsheet connected to your Apps Script project. If you already have a live Google Sheet with new orders, do not replace it blindly: first copy the updated `Menu` rows and updated `Settings`/`Terms` values into the existing live sheet, preserving `Orders` and `Bookings`.
+## 4. Publish free
+GitHub: push the files to a repo > Settings > Pages > Deploy from branch `main` / root.
+Cloudflare Pages: connect the repo, no build command, output directory `/`.
+Keep `YKD_Website_Sheet.xlsx` out of the public repo if you prefer; the site only needs `index.html`.
 
-## Adding menu items, changing prices and adding photos
-Edit the `Menu` tab. Add one row per dish/serving option. Required columns are Category, Item, Unit, Price (USD), Price note, Available, Note and Photo. Set Available to `no` to hide an item.
 
-For photos, paste a publicly viewable image URL into the Photo column. Public Google Drive file links are converted to a display URL by the website; set Drive sharing to **Anyone with the link – Viewer**. Alternatively, put the image file in an `images` folder beside `index.html` and enter its filename, e.g. `chicken-biryani.jpg`. Use photos you own or have permission to use.
-
-The website fetches menu data from Apps Script on page load. After changing the sheet, refresh the website.
-
-## Calendar
-The calendar reads the `Calendar` tab. Status values: `Available`, `Limited`, `Booked`, `Off`, `Tentative`. The website requires at least 7 days' notice, so past dates and dates within the next 7 days cannot be selected even if the sheet says Available.
-
-## Deployment
-Upload the updated `index.html`, `logo.png`, and optional `images/` folder to your GitHub repository, replacing the old website files. Do not replace your Apps Script URL with the placeholder; insert your existing `/exec` URL first.
+## Updated menu package
+The website includes a consolidated menu fallback sourced from the updated workbook. Upload the updated workbook to your Google Sheet to make the sheet-driven menu current. Keep your existing Apps Script deployment URL in `const API` in `index.html`; this package intentionally does not replace or redeploy your backend.
